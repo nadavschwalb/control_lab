@@ -1,0 +1,11 @@
+sim('q5_tf');
+t = ScopeData.tout';
+s1 = ScopeData.signals(1).values';
+s2 = ScopeData.signals(2).values';
+s3 = ScopeData.signals(3).values';
+s4 = ScopeData.signals(4).values';
+s5 = ScopeData.signals(5).values';
+
+figure('Name','tf plot');
+hold on;
+plot(t,s1
