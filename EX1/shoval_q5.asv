@@ -1,0 +1,17 @@
+[time,amp]=sim('frq_state');
+a1=ScopeData.signals.values;
+a2=a1(1/5:end/5+end/5);
+a3=a1(2*(end/5):3*(end/5));
+a4=a1(3*(end/5):4*(end/5));
+a5=a1(4*(end/5):end);
+a6=a1(1:end/5);
+state=amp(1:end,2);
+Time=time';
+figure(1);
+hold on;
+plot(a2);
+plot(a3);
+plot(a4);
+plot(a5);
+plot(
+hold off;

@@ -1,0 +1,4 @@
+hold on;
+open_system('state_space/Scope');
+sim('state_space');
+hold off;

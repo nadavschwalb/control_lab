@@ -1,0 +1,12 @@
+[time,amp]=sim('state_space');
+diff=amp(1:end,1);
+state=amp(1:end,3);
+Time=time';
+state=state';
+diff=diff';
+figure(1);
+hold on;
+plot(Time,diff);
+plot(Time,state);
+hold off;
+legend('state space','equietion');

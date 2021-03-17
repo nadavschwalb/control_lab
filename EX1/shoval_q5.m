@@ -1,0 +1,18 @@
+sim('frq_state');
+Saturation=ScopeData.signals(1).values;
+deadzone=ScopeData.signals(2).values;
+Backlash=ScopeData.signals(3).values;
+Relay=ScopeData.signals(4).values;
+Transfer_function=ScopeData.signals(5).values;
+Time=ScopeData.time;
+Time=Time';
+figure(1);
+hold on;
+plot(Time,Saturation);
+plot(Time,deadzone);
+plot(Time,Backlash);
+plot(Time,Relay);
+plot(Time,Transfer_function);
+ylim([-0.3 0.3]);
+legend('Saturation','DeadZone','Backlash','Relay','Transfer function');
+hold off;
