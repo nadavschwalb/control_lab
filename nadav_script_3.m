@@ -1,4 +1,4 @@
-coef = [3 8 3 0];
+coef = [8 2 5 1];
 theta = linspace(-pi,pi,200*pi);
 rho = (coef(1)+coef(2)) +0.5*sin((coef(3)+coef(4))*theta);
 [x,y] = pol2cart(theta,rho);
@@ -14,9 +14,5 @@ hold on;
 plot(x,atan(y));
 
 hold off;
-
-
-
-
 
 
